@@ -11,6 +11,68 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
     <link rel="stylesheet" href="equipo.css">
+    <style>
+        /* Ajuste del tamaño de los contactos */
+        .swiper-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .swiper-slide {
+            width: 220px;  /* Tamaño reducido para cada diapositiva */
+            height: 350px; /* Ajustar la altura según sea necesario */
+            margin: 0 10px; /* Espaciado entre las diapositivas */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            background: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-slide .product-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .swiper-slide .product-img img {
+            width: 80%;  /* Reducir el tamaño de la imagen */
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .swiper-slide .product-txt h3 {
+            font-size: 18px;  /* Tamaño de texto más pequeño */
+            margin: 5px 0;
+        }
+
+        .swiper-slide .product-txt p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Botón de información */
+        .swiper-slide .btn-3 {
+            font-size: 12px;
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Estilo para las flechas de navegación */
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
 
@@ -85,4 +147,3 @@
     </script>
 </body>
 </html>
-
