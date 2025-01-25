@@ -44,8 +44,16 @@
         .swiper-slide .product-img img {
             width: 80%;  /* Reducir el tamaño de la imagen */
             height: auto;
-            border-radius: 50%;
+            border-radius: 50%;  /* Hacer la imagen circular */
             margin-bottom: 10px;
+        }
+
+        /* Nueva clase para el avatar circular */
+        .swiper-slide .product-img img.avatar {
+            width: 80px;  /* Tamaño de la imagen de avatar */
+            height: 80px;  /* Tamaño de la imagen de avatar */
+            object-fit: cover;  /* Asegura que la imagen mantenga sus proporciones */
+            border-radius: 50%;  /* Redondeo para hacerlo circular */
         }
 
         .swiper-slide .product-txt h3 {
@@ -91,11 +99,11 @@
                         <h3>Calderón Vega</h3>
                         <p>
                             Correo:<br>
-                            605020589@cuc.cr
+                            305020589@cuc.cr
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Andrey.png" alt="Andrey">
+                        <img src="images/Andrey.png" alt="Andrey" class="avatar">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
@@ -118,7 +126,8 @@
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Sebastian.png" alt="Sebastián">
+                        <!-- Avatar de Sebastián con la clase 'avatar' -->
+                        <img src="images/Sebastian.png" alt="Sebastián" class="avatar">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
