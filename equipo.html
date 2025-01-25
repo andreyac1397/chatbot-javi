@@ -6,19 +6,21 @@
     <title>Asistente | Javit</title>
     <link rel="icon" href="imagenes/javi.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
     <link rel="stylesheet" href="equipo.css">
 </head>
 <body>
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-
-            <!-- Andrey's Slide -->
+            <!-- Primer contacto: Andrey -->
             <div class="swiper-slide">
                 <div class="icons">
                     <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="images/logo_cuc.png" alt="">
+                    <img src="images/logo_cuc.png" alt="logo">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="product-content">
@@ -27,21 +29,21 @@
                         <h3>Calderón Vega</h3>
                         <p>
                             Correo:<br>
-                            305020589@cuc.cr
+                            605020589@cuc.cr
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Andrey.png" alt="">
+                        <img src="images/Andrey.png" alt="Andrey">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
             </div>
 
-            <!-- Sebastián's Slide -->
+            <!-- Segundo contacto: Sebastián -->
             <div class="swiper-slide">
                 <div class="icons">
                     <i class="fa-solid fa-circle-arrow-left"></i>
-                    <img src="images/logo_cuc.png" alt="">
+                    <img src="images/logo_cuc.png" alt="logo">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="product-content">
@@ -54,12 +56,11 @@
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Sebastian.png" alt="">
+                        <img src="images/Sebastian.png" alt="Sebastián">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
             </div>
-
         </div>
     </div>
 
@@ -68,19 +69,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
-            coverflowEffect: {
-                depth: 500,
-                modifier: 1,
-                slideShadows: true,
-                rotate: 0,
-                stretch: 0
+            slidesPerView: 1, // Solo mostramos una diapositiva a la vez
+            spaceBetween: 10,  // Espacio entre las diapositivas
+            loop: true,        // Hacer loop para un desplazamiento infinito
+            effect: "slide",   // Efecto de deslizamiento entre las diapositivas
+            speed: 800,        // Duración de la transición (en milisegundos)
+            autoplay: {
+                delay: 3000,   // Desplazamiento automático cada 3 segundos
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             }
-        })
+        });
     </script>
 </body>
 </html>
+
