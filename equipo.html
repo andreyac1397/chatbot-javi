@@ -11,14 +11,70 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
     <link rel="stylesheet" href="equipo.css">
+    <style>
+        .swiper-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .swiper-slide {
+            width: 300px; /* Ajusta el tamaño de cada cuadro de contacto */
+            height: 400px; /* Ajusta la altura */
+            margin: 10px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .product-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-img img {
+            width: 80%;  /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-txt h3 {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .product-txt p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .btn-3 {
+            font-size: 12px;
+            padding: 5px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-
-
-           
+            <!-- Primer contacto: Sebastián -->
             <div class="swiper-slide">
                 <div class="icons">
                     <i class="fa-solid fa-circle-arrow-left"></i>
@@ -27,21 +83,21 @@
                 </div>
                 <div class="product-content">
                     <div class="product-txt">
-                        <span>SEbastean</span>
-                        <h3>Quieros Mora</h3>
+                        <span>Sebastián</span>
+                        <h3>Quirós Mora</h3>
                         <p>
                             Correo:<br>
-                            305010167@cuc.cr
+                            305410721@cuc.cr
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Jose.png" alt="">
+                        <img src="images/Jose.png" alt="Sebastián">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
             </div>
 
-           
+            <!-- Segundo contacto: Andrey -->
             <div class="swiper-slide">
                 <div class="icons">
                     <i class="fa-solid fa-circle-arrow-left"></i>
@@ -54,40 +110,44 @@
                         <h3>Calderón Vega</h3>
                         <p>
                             Correo:<br>
-                            605020589@cuc.cr
+                            305020589@cuc.cr
                         </p>
                     </div>
                     <div class="product-img">
-                        <img src="images/Andrey.png" alt="">
+                        <img src="images/Andrey.png" alt="Andrey">
                     </div>
                 </div>
                 <a href="nosotros.html" class="btn-3">Información</a>
             </div>
-
-            
-
         </div>
     </div>
 
     <a href="nosotros.html" class="btn-3">Inicio</a>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper",{
-            effect: "coverflow",
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",  // Efecto de transición
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
+            slidesPerView: "auto",  // Asegura que se muestren de manera adecuada
+            loop: true,             // Hacer loop
             coverflowEffect: {
-                depth:500,
-                modifer:1,
-                slidesShadows:true,
-                rotate:0,
-                stretch:0
+                depth: 500,
+                modifier: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            },
+            autoplay: {
+                delay: 3000,   // Desplazamiento automático cada 3 segundos
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             }
-        })
+        });
     </script>
 </body>
 </html>
+
