@@ -1,4 +1,4 @@
-/*los estilos para el carrucel*/
+/* los estilos para el carrusel */
 html,
 body {
     position: relative;
@@ -69,7 +69,7 @@ body {
 .btn-3 {
     display: inline-block;
     padding: 13px 55px;
-    border: 1px, solid #ffb900;
+    border: 1px solid #ffb900; /* Corregido el borde */
     border-radius: 25px;
     color: #ffb900;
     text-decoration: none;
