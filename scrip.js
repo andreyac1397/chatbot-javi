@@ -7,7 +7,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 let userMessage;
 // Aqui se tiene que insertar la api key que tengan en la api, justo donde estan las comillas
 //ejemplo: const API-KEY = "AQUI INGRESAN LA KEY";
-const API_KEY = "";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
