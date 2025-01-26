@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asistente | Javit</title>
     <link rel="icon" href="imagenes/javi.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="equipo.css">  <!-- Aquí enlazamos el archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="equipo.css">
 </head>
 <body>
-
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <!-- Primer contacto: Sebastián -->
@@ -59,6 +58,10 @@
                 <a href="nosotros.html" class="btn-3">Información</a>
             </div>
         </div>
+
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
     <a href="nosotros.html" class="btn-3">Inicio</a>
@@ -66,28 +69,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",  // Efecto de transición
+            effect: "fade",  // Efecto de transición fade
             grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",  // Asegura que se muestren de manera adecuada
-            loop: true,             // Hacer loop
-            coverflowEffect: {
-                depth: 500,
-                modifier: 1,
-                slidesShadows: true,
-                rotate: 0,
-                stretch: 0
-            },
-            autoplay: {
-                delay: 3000,   // Desplazamiento automático cada 3 segundos
-            },
+            slidesPerView: 1,  // Solo mostramos una diapositiva a la vez
+            loop: false,  // Desactivamos el loop, ya que solo tenemos 2 contactos
+            autoplay: false,  // No activamos la reproducción automática
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
-            }
+            },
         });
     </script>
 </body>
 </html>
+
 
 
