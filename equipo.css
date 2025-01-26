@@ -6,12 +6,13 @@ html, body {
     background-color: #323232;
 }
 
-.swiper {
-    width: 100%;
-    padding: 50px 0;
+.contactos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.swiper-slide {
+.contacto {
     width: 300px;
     height: 500px;
     background-color: #323232;
@@ -21,7 +22,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.5s ease-in-out; /* Transición suave */
 }
 
 .icons {
@@ -82,8 +82,14 @@ html, body {
     margin-top: 50px;
 }
 
-/* Ajuste para que las flechas de navegación se muestren en el carrusel */
-.swiper-button-next, .swiper-button-prev {
-    color: #ffb900;
+/* Estilos para las imágenes de contacto */
+.contacto img {
+    width: 120px;
+    height: auto;
+}
+
+/* Quitar las transiciones de Swiper */
+.swiper {
+    display: none; /* Eliminar Swiper si no se necesita */
 }
 
