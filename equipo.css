@@ -4,31 +4,39 @@ html, body {
     padding: 0;
     font-family: Helvetica Neue, Helvetica;
     background-color: #323232;
+    height: 100%;
 }
 
+/* Contenedor para los dos contactos */
 .contactos {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;  /* Espacio entre los contactos */
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
+/* Estilo de cada tarjeta de contacto */
 .contacto {
-    width: 300px;
-    height: 500px;
+    width: 200px;  /* Tamaño reducido de la tarjeta */
+    height: 350px; /* Ajuste de altura */
     background-color: #323232;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
+    color: white;
 }
 
+/* Estilo de los íconos en la parte superior */
 .icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .icons i {
@@ -36,24 +44,32 @@ html, body {
     color: #ffb900;
 }
 
+.icons img {
+    width: 40px;  /* Tamaño reducido del logo */
+    height: auto;
+}
+
+/* Contenido del contacto */
 .product-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-txt {
-    flex-basis: 50%;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .product-txt span {
-    font-size: 25px;
+    font-size: 18px;
     color: #ffb900;
     font-weight: bold;
 }
 
 .product-txt h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: aliceblue;
     text-transform: uppercase;
 }
@@ -63,33 +79,40 @@ html, body {
     color: #c4c4c4;
 }
 
-.product-img {
-    flex-basis: 50%;
-    text-align: right;
-}
-
+/* Imagen del contacto */
 .product-img img {
-    width: 120px;
+    width: 80px;  /* Imagen pequeña */
+    height: 80px;
+    border-radius: 50%;
 }
 
+/* Botón de información */
 .btn-3 {
     display: inline-block;
-    padding: 13px 55px;
+    padding: 10px 25px;
     border: 1px solid #ffb900;
     border-radius: 25px;
     color: #ffb900;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
-/* Estilos para las imágenes de contacto */
-.contacto img {
-    width: 120px;
-    height: auto;
+/* Estilos de resposividad */
+@media (max-width: 768px) {
+    .contacto {
+        width: 250px;
+        height: 400px;
+    }
+
+    .product-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-3 {
+        font-size: 14px;
+    }
 }
 
-/* Quitar las transiciones de Swiper */
-.swiper {
-    display: none; /* Eliminar Swiper si no se necesita */
-}
 
