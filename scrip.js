@@ -6,7 +6,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 // Aquí debes insertar tu API Key obtenida desde OpenAI, justo donde están las comillas
-const API_KEY = "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";
+const API_KEY = "falta la api";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
